@@ -1,7 +1,7 @@
 # Sign-up page
 
 import sys
-from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QLabel, QLineEdit
+from PyQt6.QtWidgets import QApplication, QWidget, QLabel, QLineEdit, QVBoxLayout
 from PyQt6.QtGui import QIcon, QFont, QPixmap
 
 class window(QWidget) :
@@ -11,13 +11,19 @@ class window(QWidget) :
         self.setWindowIcon(QIcon("icon.ico"))
         self.resize(800, 600)
 
+        layout = QVBoxLayout()
+
         image_box = QLabel(self)
         pixmap = QPixmap("icon.ico")
         image_box.setPixmap(pixmap)
-        image_box.setGeometry(50, 50, 300, 300)
+        image_box.setGeometry(100, 100, 300, 300)
+        layout.addWidget(image_box)
 
         input_box = QLineEdit(self)
         input_box.setGeometry(150, 400, 200, 30)
+        layout.addWidget(input_box)
+
+        self.setLayout(layout)
 
 
 app = QApplication(sys.argv)
