@@ -1,0 +1,1 @@
+WINDOW_ICON = "icon/app_icon.ico"
