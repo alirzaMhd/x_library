@@ -4,12 +4,13 @@ import sys
 
 from PyQt6.QtWidgets import QApplication, QWidget, QLabel, QLineEdit, QVBoxLayout
 from PyQt6.QtGui import QIcon, QFont, QPixmap
+from constants import WINDOW_ICON
 
 class SignUpWindow(QWidget) :
     def __init__(self) :
         super().__init__()
         self.setWindowTitle("X_Library | Sign Up Window")
-        self.setWindowIcon(QIcon("icon/app_icon.ico"))
+        self.setWindowIcon(QIcon(WINDOW_ICON))
         self.resize(800, 600)
         
         window_layout = QVBoxLayout()
