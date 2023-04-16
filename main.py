@@ -2,8 +2,7 @@
 
 import sys
 
-from PyQt6.QtWidgets import QApplication, QWidget, QLabel, QLineEdit, QVBoxLayout
-from PyQt6.QtGui import QIcon, QFont, QPixmap
+from PyQt6.QtWidgets import QApplication
 from sign_up_window import SignUpWindow
 
 def main():
