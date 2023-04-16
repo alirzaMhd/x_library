@@ -5,7 +5,7 @@ import sys
 from PyQt6.QtWidgets import QApplication, QWidget, QLabel, QLineEdit, QVBoxLayout
 from PyQt6.QtGui import QIcon, QFont, QPixmap
 
-class Window(QWidget) :
+class SignUpWindow(QWidget) :
     def __init__(self) :
         super().__init__()
         self.setWindowTitle("X_Library | Sign Up Window")
