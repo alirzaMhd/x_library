@@ -18,11 +18,9 @@ class SignUpWindow(QWidget) :
         image_box = QLabel(self)
         captcha_image = QPixmap("icon/app_icon.ico")
         image_box.setPixmap(captcha_image)
-        image_box.setGeometry(100, 100, 300, 300)
         window_layout.addWidget(image_box)
         
         input_box = QLineEdit(self)
-        input_box.setGeometry(150, 400, 200, 30)
         window_layout.addWidget(input_box)
 
         self.setLayout(window_layout)
