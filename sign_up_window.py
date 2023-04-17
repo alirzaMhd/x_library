@@ -10,7 +10,9 @@ class SignUpWindow(QWidget) :
         self.setWindowTitle("X_Library | Sign Up Window")
         self.setWindowIcon(QIcon(WINDOW_ICON))
         self.resize(800, 600)
-        
+        self.create_widgets()
+
+    def create_widgets(self) :
         window_layout = QVBoxLayout()
 
         image_box = QLabel(self)
@@ -22,4 +24,5 @@ class SignUpWindow(QWidget) :
         input_box = QLineEdit(self)
         input_box.setGeometry(150, 400, 200, 30)
         window_layout.addWidget(input_box)
+
         self.setLayout(window_layout)
