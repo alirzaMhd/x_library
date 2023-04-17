@@ -1,11 +1,11 @@
 import sys
 
 from PyQt6.QtWidgets import QApplication
-from sign_up_window import SignUpWindow
+from book_search import BookSearch
 
 def main():
     app = QApplication(sys.argv)
-    window = SignUpWindow()
+    window = BookSearch()
     window.show()
     sys.exit(app.exec())
 
